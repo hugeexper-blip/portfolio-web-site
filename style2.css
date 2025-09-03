@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Case Studies Style Start */
+
+.nav {
+  grid-area: nav;
+  background-color: black;
+  width: 80%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(153, 148, 148);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: smaller;
+}
+.socialmedia a {
+  font-size: x-large;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-style: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 105px;
+}
+.socialmedia > div {
+  height: 12.5vh;
+  align-content: center;
+  border-style: none;
+}
+.nav > div {
+  height: 12.5vh;
+  align-content: center;
+  border-style: none;
+}
+
+.head-case {
+  width: 80%;
+  margin: auto;
+  height: 18vh;
+  margin-top: 20px;
+}
+.head-case > h1 {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+}
+.head-case > p {
+  text-align: center;
+  font-size: 15px;
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+  color: rgb(153, 148, 148);
+}
+
+.casestudy-container {
+  display: grid;
+  grid-template-areas:
+    "content1 image1"
+    "content2 image2"
+    "content3 image3";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  border: none;
+  border-color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.casestudy-container > div.content1 {
+  grid-area: content1;
+}
+.casestudy-container > div.image1 {
+  grid-area: image1;
+}
+.casestudy-container > div.content2 {
+  grid-area: content2;
+}
+.casestudy-container > div.image2 {
+  grid-area: image2;
+}
+.casestudy-container > div.content3 {
+  grid-area: content3;
+}
+.casestudy-container > div.image3 {
+  grid-area: image3;
+}
+.casestudy-container > div {
+  border-style: none;
+  border-color: black;
+}
+.image1 > img {
+  border-style: none;
+  align-items: center;
+  width: 100%;
+}
+.content2 > img {
+  border-style: none;
+  align-items: center;
+  width: 100%;
+}
+.image3 > img {
+  border-style: none;
+  align-items: center;
+  width: 100%;
+}
